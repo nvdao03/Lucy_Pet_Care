@@ -30,6 +30,7 @@ body {
     min-width: 117px;
     height: 56px;
     display: inline-flex;
+    justify-content: center;
     align-items: center;
     color: #000958;
     font-size: 1.4rem;
@@ -755,4 +756,117 @@ a {
     font-size: 1.6rem;
     font-weight: 500;
     margin-top: 45px;
+}
+
+/* ==== Staff ==== */
+.staff {
+    padding: 130px 0px;
+    background-color: var(--background-color);
+}
+
+.staff__intro {
+    display: block;
+    color: #5e6085;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.staff__heading {
+    display: block;
+    text-align: center;
+    color: #000958;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.19;
+    margin-top: 15px;
+}
+
+.staff-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 67px;
+    margin-top: 78px;
+}
+
+.staff-avatar {
+    position: relative;
+    width: 100%;
+    height: 266px;
+    border-radius: 130px;
+}
+
+.staff-item:nth-child(1) .staff-avatar {
+    background: #90ccff;
+}
+
+.staff-item:nth-child(2) .staff-avatar {
+    background: #ff997e;
+}
+
+.staff-item:nth-child(3) .staff-avatar {
+    background: #fabf3e;
+}
+
+.staff-item:nth-child(4) .staff-avatar {
+    background: #5bd6e2;
+}
+
+.staff-avatar__member {
+    width: 100%;
+    position: absolute;
+    border-radius: 130px;
+    bottom: 0;
+}
+
+.staff-avatar__decor {
+    position: absolute;
+    bottom: 0;
+    left: -14px;
+}
+
+.staff-item:nth-child(2) .staff-avatar__decor {
+    top: 0;
+}
+
+.staff-item:nth-child(4) .staff-avatar__decor {
+    top: 0;
+}
+
+.staff-info__intro {
+    font-family: "Poppins", sans-serif;
+    color: #656689;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+    margin-top: 34px;
+}
+
+.staff-info__heading {
+    color: #000958;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1;
+    margin-top: 14px;
+}
+
+.staff-btn-block {
+    display: block;
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+}
+
+.staff-btn {
+    min-width: 193px;
+    color: #ff5b2e;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+    border-radius: 31px;
+    border: 1px solid #ff5b2e;
 }
