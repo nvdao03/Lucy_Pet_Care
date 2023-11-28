@@ -870,3 +870,180 @@ a {
     border-radius: 31px;
     border: 1px solid #ff5b2e;
 }
+
+/* ==== Pricing ==== */
+.pricing {
+    padding: 86px 0;
+    background-color: var(--primay-background-color);
+}
+
+.pricing-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing-content__heading {
+    color: #000958;
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.19;
+}
+
+.pricing-content__desc {
+    width: 709px;
+    text-align: center;
+    color: #656689;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.87;
+    margin-top: 24px;
+}
+
+.pricing-content__button {
+    position: relative;
+    width: 276px;
+    height: 56px;
+    margin-top: 38px;
+    border-radius: 31px;
+    border: 1px solid #ff5b2e;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.pricing-lable::before {
+    position: absolute;
+    content: "Monthly";
+    display: inline-block;
+    color: #ff5b2e;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+    padding: 20px 0px 20px 40px;
+    cursor: pointer;
+}
+
+.pricing-lable::after {
+    content: "Yearly";
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 131px;
+    height: 56px;
+    border-radius: 31px;
+    background: #ff5b2e;
+
+    transform: translateX(0);
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    cursor: pointer;
+}
+
+.pricing-content__button:has(:checked) .pricing-lable::after {
+    transform: translateX(145px);
+    color: white;
+}
+
+.pricing-row {
+    margin-top: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 44px;
+}
+
+.pricing-col {
+    padding: 30px 28px 43px;
+    background-color: #fff;
+    flex-basis: 25%;
+    border-radius: 20px;
+    cursor: pointer;
+
+    transition: box-shadow;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.pricing-col:hover {
+    box-shadow: 0px 20px 44px 0px rgba(195, 108, 22, 0.06);
+}
+
+.pricing-col__intro {
+    color: #ff5b2e;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.pricing-col__heading {
+    color: #3f4065;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+    margin-top: 8px;
+}
+
+.pricing-col__price {
+    display: inline-block;
+    color: #000958;
+    font-size: 3.3rem;
+    font-weight: 700;
+    line-height: 1.03;
+    margin-top: 24px;
+}
+
+.pricing-col__btn {
+    display: block;
+    width: 100%;
+    color: #ff5b2e;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+    border-radius: 39px;
+    border: 1px solid rgba(255, 91, 46, 0.6);
+    padding: 14px 0;
+    background-color: #fff;
+    margin-top: 22px;
+    cursor: pointer;
+
+    transition-property: color, background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+.pricing-col__btn:hover {
+    color: #fff;
+    background-color: #ff5b2e;
+}
+
+.pricing-list {
+    margin-top: 24px;
+}
+
+.pricing-item {
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+}
+
+.pricing-item + .pricing-item {
+    margin-top: 18px;
+}
+
+.pricing-item__link {
+    color: #656689;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+}
