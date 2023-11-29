@@ -1047,3 +1047,125 @@ a {
     font-weight: 400;
     line-height: 1;
 }
+
+/* ==== Review ==== */
+.review {
+    background-color: var(--background-color);
+}
+
+.review-body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 130px 0 64px;
+}
+
+.review-arrow {
+    display: inline-block;
+    width: 54px;
+    height: 54px;
+    padding: 17px;
+    background-color: var(--background-color);
+    border: 1px solid #ffd1c4;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.review-list {
+    margin-left: 44px;
+    display: flex;
+}
+
+.review-item {
+    display: flex;
+    align-items: center;
+}
+
+.review-item-media {
+    position: relative;
+    width: 274px;
+    height: 350px;
+    border-radius: 137px;
+    background: #ffda54;
+    box-shadow: 41px 1px 41px 0px rgba(255, 175, 19, 0.18);
+}
+
+.review-item-media__img {
+    width: 274px;
+    height: 360px;
+    position: absolute;
+    border-radius: 137px;
+    bottom: 0;
+    object-fit: cover;
+}
+
+.review-item-content {
+    width: 553px;
+    margin-left: 115px;
+}
+
+.review-item__heading {
+    color: #000958;
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.19;
+}
+
+.review-item__desc {
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.55;
+    margin-top: 24px;
+}
+
+.review-item__wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 34px;
+}
+
+.review-item__decor {
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+    margin-right: 8px;
+}
+
+.review-item__name {
+    color: #282828;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.review-arrow--right {
+    margin-left: auto;
+    background: #ff5b2e;
+    box-shadow: 0px 5px 27px 0px rgba(255, 91, 46, 0.3);
+}
+
+.review-item-dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid #ff5b2e;
+}
+
+.dot-active {
+    width: 24px;
+    height: 8px;
+    border-radius: 4px;
+    background: #ff5b2e;
+}
